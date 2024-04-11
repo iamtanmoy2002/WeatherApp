@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Reddit+Mono&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+</head>
+<body class="bg-neutral-900 flex justify-center ">
+    <div class="card w-96 max-w-lg bg-gradient-to-r from-green-200 to-blue-800 mt-20 px-10 py-9  rounded-lg">
+        <div class="flex justify-center">
+            <input id="searchBox" class="rounded-3xl w-64 p-2 text-black mr-2 px-5" type="text" placeholder="Enter a City Name" spellcheck="false"/>
+            <button id="searchButton" class="text-2xl bg-white rounded-full py-1 px-2 cursor-pointer"><i class="ri-search-line"></i></button>
+        </div>
+        <div class="weather flex flex-col gap-2 justify-center items-center mb-20">
+            <div id="temp_icon" class="weatherIcon text-9xl p-1 mt-5 text-blue-200"><i class="ri-rainy-line"></i></div>
+            <div id="temp" class="temparatue font-poppins text-6xl font-semibold text-white">
+                22°C
+            </div>
+            <div id="cityName" class="font-reddit font-semibold text-3xl  text-white">
+                Kolkata
+            </div>
+        </div>
+        <div class="details flex items-center gap-10 justify-between">
+            <div class="flex items-center">
+                <div id="humidityIcon" ><i class="text-5xl text-white ri-water-percent-line"></i></div>
+                
+                <div class="flex flex-col  font-poppins text-white">
+                    <p id="Humidity" class="text-2xl">57%</p>
+                    <p class="text-sm">Humidity</p>
+                    
+                </div>
+            </div>
+            <div class="flex  items-center">
+                <div id="WindIcon"><i  class="text-5xl text-white ri-windy-line"></i></div>
+                
+                <div class="flex flex-col  font-poppins text-white">
+                    <p id="WindSpeed" class="text-2xl">15km/hr</p>
+                    <p class="text-sm">Wind speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    
+<script src="script.js"></script>
+</body>
+</html>
